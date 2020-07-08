@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from '../Login/Login.module.scss';
 
-const Booking = () => {
+const Booking = (value) => {
+
+  const id = value.match.params.id;
+
+
   return(
     <div className={styles.component}>
       <h2>
-      Booking view
+      Booking view {id}
       </h2>
     </div>
   );
