@@ -2,10 +2,15 @@
 
 .component {
   padding: $base-size;
+  margin-left: auto;
 }
 nav{
   a{
   margin: 10px;
   text-decoration: none;
   }
+}
+
+.link{
+  color: inherit;
 }

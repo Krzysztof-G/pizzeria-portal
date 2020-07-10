@@ -3,3 +3,18 @@
 .component {
   padding: $base-size;
 }
+
+.menu {
+  text-align: right;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.textField {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px,
+}
