@@ -3,18 +3,15 @@
 .component {
   padding: $base-size;
 }
-
-.menu {
-  text-align: right;
+.cell{
+margin: 10px;
 }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
+.date{
+  width: 483px;
 }
-
-.textField {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 200px,
+.details{
+  width: 375px;
+}
+.table{
+  width: 350px;
 }

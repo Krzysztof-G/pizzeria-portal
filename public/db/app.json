@@ -289,195 +289,36 @@
       "starters": [
         "water"
       ]
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 2
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 3
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 4
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 5
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 6
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 7
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 8
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 9
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 10
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 11
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 12
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 13
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 14
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 15
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 16
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 17
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 18
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 19
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 20
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 21
-    },
-    {
-      "address": "",
-      "phone": "",
-      "date": "2020-04-13",
-      "hour": "12:00",
-      "ppl": 1,
-      "duration": 1,
-      "id": 22
     }
-  ]
+  ],
+  "tables": [
+    {
+      "id": "new",
+      "status": "free",
+      "order": null},
+    {
+      "id": "2",
+      "status": "thinking",
+      "order": null
+    },
+    {
+      "id": "3",
+      "status": "ordered",
+      "order": 123},
+    {
+      "id": "4",
+      "status": "prepared",
+      "order": 234
+    },
+    {
+      "id": "5",
+      "status": "delivered",
+      "order": 345
+    },
+    {
+      "id": "6",
+      "status": "paid",
+      "order": 456
+    }
+  ]   
 }
