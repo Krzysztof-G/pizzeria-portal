@@ -16,7 +16,8 @@ class Waiter extends React.Component {
       active: PropTypes.bool,
       error: PropTypes.oneOfType([PropTypes.bool,PropTypes.string]),
     }),
-    tables: PropTypes.object,
+    tables: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+    changeStatus: PropTypes.func,
   }
 
   componentDidMount(){
@@ -24,34 +25,52 @@ class Waiter extends React.Component {
     fetchTables();
   }
 
-  renderActions(status){
+  renderActions(id, status){
+    const { changeStatus } = this.props;
+    const actionDescribe = ['free', 'thinking', 'ordered', 'prepared', 'delivered', 'paid'];
+    const insertActionDescribe = (status) => {
+      const nextIndex = actionDescribe.indexOf(status)+1;
+      return nextIndex < actionDescribe.length
+        ? actionDescribe[nextIndex]
+        : actionDescribe[0];
+    };
+
     switch (status) {
       case 'free':
         return (
-          <>
-            <Button>thinking</Button>
-            <Button>new order</Button>
-          </>
+          <Button onClick={() => changeStatus(id, 'thinking')}>
+            {insertActionDescribe(status)}
+          </Button>
         );
       case 'thinking':
         return (
-          <Button>new order</Button>
+          <Button onClick={() => changeStatus(id, 'ordered')}>
+            {insertActionDescribe(status)}
+          </Button>
         );
       case 'ordered':
         return (
-          <Button>prepared</Button>
+          <Button onClick={() => changeStatus(id, 'prepared')}>
+            {insertActionDescribe(status)}
+          </Button>
         );
       case 'prepared':
         return (
-          <Button>delivered</Button>
+          <Button onClick={() => changeStatus(id, 'delivered')}>
+            {insertActionDescribe(status)}
+          </Button>
         );
       case 'delivered':
         return (
-          <Button>paid</Button>
+          <Button onClick={() => changeStatus(id, 'paid')}>
+            {insertActionDescribe(status)}
+          </Button>
         );
       case 'paid':
         return (
-          <Button>free</Button>
+          <Button onClick={() => changeStatus(id, 'free')}>
+            {insertActionDescribe(status)}
+          </Button>
         );
       default:
         return null;
@@ -103,7 +122,7 @@ class Waiter extends React.Component {
                     )}
                   </TableCell>
                   <TableCell>
-                    {this.renderActions(row.status)}
+                    {this.renderActions(row.id, row.status)}
                   </TableCell>
                 </TableRow>
               ))}
